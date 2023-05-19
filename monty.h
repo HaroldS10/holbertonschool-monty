@@ -54,6 +54,7 @@ void execute(char *string[], stack_t *stack);
 int  nlfind(char *list);
 void free_list(char *a[]);
 int  combfind(char *list, int ln);
-
+void add(stack_t **stack, unsigned int line_num);
+void pint(stack_t **stack, unsigned int line_num);
 
 #endif

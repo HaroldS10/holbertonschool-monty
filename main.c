@@ -50,7 +50,9 @@ void execute(char *string[], stack_t *stack)
                 {"pall", pall},
                 {"swap", swap},
                 {"pop", pop},
-                {"null", NULL}
+                {"null", NULL},
+		{"pint", pint},
+		{"add", add},
         };
 
         for (ln = 1, n = 0; string[n + 1]; n++, ln++)
