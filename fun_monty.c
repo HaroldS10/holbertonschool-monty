@@ -7,9 +7,10 @@
  * @n: variable
  * Return: address of new element
  */
+
 void push(stack_t **stack, unsigned int line_num, int n)
 {
-        stack_t *new, *h = *stack;
+	stack_t *new, *h = *stack;
         if (stack == NULL)
         {
                 fprintf(stderr, "L%d: usage: push integer\n", line_num);
@@ -32,6 +33,7 @@ void push(stack_t **stack, unsigned int line_num, int n)
  * @line_num: file's line number
  * Return: Void
  */
+
 void pall(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack;
@@ -50,6 +52,7 @@ void pall(stack_t **stack, unsigned int line_num)
  * @line_num: file's line number
  * Return: Void
  */
+
 void pop(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack;
@@ -71,6 +74,7 @@ void pop(stack_t **stack, unsigned int line_num)
  * @line_num: file's line number
  * Return:  Void
  */
+
 void swap(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack, *ptr;
