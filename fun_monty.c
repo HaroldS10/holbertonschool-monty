@@ -10,7 +10,6 @@
 void push(stack_t **stack, unsigned int line_num, int n)
 {
         stack_t *new, *h = *stack;
-
         if (stack == NULL)
         {
                 fprintf(stderr, "L%d: usage: push integer\n", line_num);
@@ -54,14 +53,11 @@ void pall(stack_t **stack, unsigned int line_num)
 void pop(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack;
-
 	if (!(*stack))
 	{
 		fprintf(stderr, "L%u: can't pop an empty stack\n", line_num);
 		exit(EXIT_FAILURE);
 	}
-
-
 	if (h)
 	{
 		*stack = (h)->next;
@@ -78,13 +74,11 @@ void pop(stack_t **stack, unsigned int line_num)
 void swap(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack, *ptr;
-
 	if ((*stack) == NULL || (*stack)->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't swap, stack too short\n", line_num);
 		exit(EXIT_FAILURE);
 	}
-
 	if (h && h->next)
 	{
 		ptr = h->next;
