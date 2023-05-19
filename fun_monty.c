@@ -38,6 +38,7 @@ void push(stack_t **stack, unsigned int line_num, int n)
 void pall(stack_t **stack, unsigned int line_num)
 {
         stack_t *h = *stack;
+
         (void)line_num;
 
         while (h)
